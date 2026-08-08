@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     name: Test on Node.js
-[self-hosted, linux]
+    runs-on: [self-hosted, linux]
 
     steps:
       - name: Checkout code

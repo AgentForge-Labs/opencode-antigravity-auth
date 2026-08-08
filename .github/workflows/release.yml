@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   publish:
-[self-hosted, linux]
+    runs-on: [self-hosted, linux]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
