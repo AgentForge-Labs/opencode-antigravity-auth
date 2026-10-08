@@ -9,7 +9,8 @@ on:
 jobs:
   test:
     name: Test on Node.js
-    runs-on: [self-hosted, linux]
+    runs-on: ${{ fromJSON(vars.AF_PUBLIC_CI_RUNS_ON) }}
+    timeout-minutes: 15
 
     steps:
       - name: Checkout code
